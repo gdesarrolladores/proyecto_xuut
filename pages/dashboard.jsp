@@ -261,7 +261,7 @@
 					                            <div class="EmptyBox5"></div>
 					                            <span class="FontRobotoLight Fs18">Admin. Contactos</span>
 					                            <div class="EmptyBox10"></div>
-					                            <button class="GreenButton" onclick="location.href='/contacts'">Ir</button>
+					                            <button class="GreenButton" onclick="location.href='/contactList'">Ir</button>
 					                        </div>
 					                    </div> 
 					                </div>
