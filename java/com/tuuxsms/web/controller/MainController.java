@@ -3,6 +3,8 @@ package com.tuuxsms.web.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -46,14 +48,25 @@ public class MainController {
 
 	}
 	
-	@RequestMapping(value = { "/contacts**" }, method = RequestMethod.GET)
-	public ModelAndView contactPage() {
+	@RequestMapping(value = { "/contactList" }, method = RequestMethod.GET)
+	public ModelAndView contactListPage() {
 
 		ModelAndView model = new ModelAndView();
 		
-		model.setViewName("contacts");
+		model.setViewName("contactList");
 		return model;
 
 	}
+	
+	@RequestMapping(value = { "/contactForm" }, method = RequestMethod.GET)
+	public ModelAndView contactFormPage(@ModelAttribute(value="cellPhone") String cellPhone) {
+
+		ModelAndView model = new ModelAndView();
+		logger.info("contactFormPage: " + cellPhone);
+		model.setViewName("contactForm");
+		return model;
+
+	}
+	
 
 }
