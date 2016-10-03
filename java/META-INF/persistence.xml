@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="tuuxsms">
+		<class>com.tuuxsms.model.Campaign</class>
+		<class>com.tuuxsms.model.CampaignPerson</class>
+		<class>com.tuuxsms.model.CampaignPersonPK</class>
+		<class>com.tuuxsms.model.DistributionList</class>
+		<class>com.tuuxsms.model.Message</class>
+		<class>com.tuuxsms.model.Person</class>
+		<class>com.tuuxsms.model.User</class>
+		<class>com.tuuxsms.model.UserOrder</class>
+		<class>com.tuuxsms.model.UserRole</class>
+		<class>com.tuuxsms.model.UserRolePK</class>
+	</persistence-unit>
+</persistence>
